@@ -12,6 +12,19 @@ namespace ProgramacionClase3
         public Rueda ruedados;
         public Rueda ruedatres;
         public Rueda ruedacuatro;
+        private string marca;
+        public static string fecha;
+
+        static Auto()
+        {
+             Auto.fecha= (new DateTime()).ToString();
+        }
+        public Auto(string marca)
+        {
+            this.marca = marca;
+            Auto.fecha = "oooooo";
+
+        }
 
 
     }

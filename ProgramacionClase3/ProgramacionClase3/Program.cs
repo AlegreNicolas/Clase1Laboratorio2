@@ -10,6 +10,7 @@ namespace ProgramacionClase3
     {
         static void Main(string[] args)
         {
+            Auto.fecha = "lalalal";
             int numero;
             numero = 0;
             Alumno unalumno;
@@ -18,9 +19,12 @@ namespace ProgramacionClase3
             //unalumno.nombre = "Nicolas";
             unalumno.Setnombre("Nicolas");
             unalumno.Getlegajo();
-           
             //Console.WriteLine(unalumno.nombre);
             unalumno.mostrar();
+            Auto unauto = new Auto("Fiat");
+            Auto unauto2 = new Auto("Fiat");
+            Auto unauto3 = new Auto("Fiat");
+
             Console.ReadKey();
 
         }
