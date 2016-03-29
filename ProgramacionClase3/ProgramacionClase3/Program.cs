@@ -13,9 +13,11 @@ namespace ProgramacionClase3
             int numero;
             numero = 0;
             Alumno unalumno;
-            unalumno=new Alumno();
+            unalumno=new Alumno(666);
             //Alumno nuevo = new Alumno();
-            unalumno.nombre = "Nicolas";
+            //unalumno.nombre = "Nicolas";
+            unalumno.Setnombre("Nicolas");
+            unalumno.Getlegajo();
            
             //Console.WriteLine(unalumno.nombre);
             unalumno.mostrar();

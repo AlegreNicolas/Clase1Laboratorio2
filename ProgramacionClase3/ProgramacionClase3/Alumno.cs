@@ -8,15 +8,15 @@ namespace ProgramacionClase3
 {
     class Alumno
     {
-        public string nombre;
+        private string nombre;
+        private int legajo;
 
         public void mostrar()
         {
-            Console.Write(this.nombre+legajo);//sin el this se puede usar igual 
+            Console.Write(this.nombre + this.legajo);//sin el this se puede usar igual 
             
 
         }
-        public int legajo;
 
         public bool compararme(Alumno alumno)//va a devolver true
         {
@@ -29,6 +29,30 @@ namespace ProgramacionClase3
             
             return respuesta;
         }
+        //contrustor
+        public Alumno(int legajo)
+        {
+
+            this.nombre = "lalal";
+            this.legajo = legajo;
+
+        }
+        public int Getlegajo()
+        {
+
+
+
+            return this.legajo;
+        }
+        
+        public void Setnombre(string nombre)
+        {
+
+            this.nombre = nombre;
+
+        }
+
+
 
     }
 }
