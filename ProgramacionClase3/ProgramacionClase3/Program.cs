@@ -25,6 +25,7 @@ namespace ProgramacionClase3
             Auto unauto2 = new Auto("Fiat");
             Auto unauto3 = new Auto("Fiat");
 
+            Alumno.mostraralumno(unalumno);
             Console.ReadKey();
 
         }

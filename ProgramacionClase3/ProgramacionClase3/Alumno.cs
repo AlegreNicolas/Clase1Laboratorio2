@@ -18,7 +18,7 @@ namespace ProgramacionClase3
 
         }
 
-        public bool compararme(Alumno alumno)//va a devolver true
+        private bool compararme(Alumno alumno)//va a devolver true
         {
             bool respuesta = false;
             if (this.nombre == alumno.nombre && this.legajo == alumno.legajo)
@@ -28,6 +28,21 @@ namespace ProgramacionClase3
             
             
             return respuesta;
+        }
+
+        public static bool comparardosalumnos(Alumno alumnouno, Alumno alumnodos)
+        {
+            bool respuesta = false;
+            if (alumnouno.nombre == alumnodos.nombre && alumnouno.legajo == alumnodos.legajo)
+            {
+                respuesta = true;
+            }
+
+            return respuesta;
+        }
+        public static void mostraralumno(Alumno alumno)
+        {
+            Console.Write(alumno.nombre + alumno.legajo);
         }
         //contrustor
         public Alumno(int legajo)
